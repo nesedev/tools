@@ -6,7 +6,7 @@ before_script:
 cache:
   paths:
     - node_modules/
-    - .yarn
+    - .yarn/
 
 pages:
   script:
