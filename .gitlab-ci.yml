@@ -11,6 +11,7 @@ cache:
 pages:
   script:
     - yarn generate
+    - mv dist public
   artifacts:
     paths:
       - dist
