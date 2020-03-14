@@ -1,19 +1,11 @@
-image: node
-
-before_script:
-  - yarn install
-
-cache:
-  paths:
-    - node_modules/
-    - .yarn/
+image: alpine:latest
 
 pages:
+  stage: deploy
   script:
-    - yarn generate
-    - mv dist public
+  - mv static public
   artifacts:
     paths:
-      - public
+    - public
   only:
-    - master
+  - master
