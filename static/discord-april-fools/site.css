@@ -74,16 +74,12 @@ h1 {
 }
 
 #logo-canvas {
-  display: none;
-}
-
-#logo-output {
   width: 256px;
   max-width: 100%;
   border-radius: 50%;
   transition: .25s ease-in-out;
 }
 
-#logo-output:hover {
+#logo-canvas:hover {
   border-radius: 35%;
 }
