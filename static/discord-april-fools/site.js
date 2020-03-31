@@ -39,7 +39,7 @@ downloadButton.onclick = function() {
   var link = document.createElement('a');
   var fileName = currentFile ? (currentFile.name.substring(0, currentFile.name.lastIndexOf('.')) || currentFile.name) + '-april-fools.png' : 'discord-april-fools.png';
   link.download = fileName;
-  link.href = logoOutput.src;
+  link.href = canvas.toDataURL();
   link.click();
 }
 
@@ -60,7 +60,7 @@ function addNotification() {
   ctx.font = '700 125px Roboto Mono';
   ctx.fillText(numberInput.value, 338, 420);
 
-  logoOutput.src = canvas.toDataURL();
+  // logoOutput.src = canvas.toDataURL();
 }
 
 function init() {
