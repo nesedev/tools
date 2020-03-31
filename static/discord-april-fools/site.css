@@ -28,11 +28,13 @@ body {
   overflow: visible;
   max-width: 90%;
   width: 512px;
+  align-items: center;
 }
 
 h1 {
   margin: 0;
   font-weight: 400;
+  font-size: 24px;
 }
 
 #logo-input {
@@ -46,6 +48,7 @@ h1 {
   border-radius: 1rem;
   cursor: pointer;
   transition: .25s;
+  width: 100%;
 }
 
 .button h1 {
@@ -54,7 +57,7 @@ h1 {
 }
 
 .input {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 400;
   font-family: inherit;
   border: none;
@@ -63,6 +66,7 @@ h1 {
   padding: 1rem;
   border-radius: 1rem;
   color: inherit;
+  width: 100%;
 }
 
 .button:hover {
@@ -74,7 +78,8 @@ h1 {
 }
 
 #logo-output {
-  width: 100%;
+  width: 256px;
+  max-width: 100%;
   border-radius: 50%;
   transition: .25s ease-in-out;
 }
