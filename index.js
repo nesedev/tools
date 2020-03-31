@@ -7,4 +7,4 @@ const port = 3000;
 
 app.use(serveStatic('static'));
 
-app.listen(3000);
+app.listen(port);
