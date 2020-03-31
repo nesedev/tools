@@ -7,8 +7,4 @@ const port = 3000;
 
 app.use(serveStatic('static'));
 
-<<<<<<< HEAD
 app.listen(port);
-=======
-app.listen(3000);
->>>>>>> master
