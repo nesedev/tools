@@ -27,6 +27,7 @@ body {
   max-height: 100vh;
   overflow: visible;
   max-width: 90%;
+  width: 512px;
 }
 
 h1 {
@@ -45,6 +46,11 @@ h1 {
   border-radius: 1rem;
   cursor: pointer;
   transition: .25s;
+}
+
+.button h1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .input {
