@@ -24,7 +24,6 @@ logoInput.onchange = function(e) {
     currentImage.onload = function() {
       ctx.clearRect(0,0,canvas.width, canvas.height);
       ctx.drawImage(currentImage, 0, 0, canvas.width, canvas.width);
-      // ctx.drawImage(templateImage, 0, 0, canvas.width, canvas.width);
       addNotification();
     }
   }
@@ -67,11 +66,14 @@ function addNotification() {
 
 function init() {
   ctx.clearRect(0,0,canvas.width, canvas.height);
+  ctx.fillStyle = '#36393F';
+  ctx.fillRect(0,0,canvas.width, canvas.height);
+  addNotification();
 
-  currentImage.src = 'images/sample.png';
-  currentImage.onload = function() {
-    ctx.drawImage(currentImage, 0, 0, canvas.width, canvas.width);
-    addNotification();
-  }
+  // currentImage.src = 'images/sample.png';
+  // currentImage.onload = function() {
+  //   ctx.drawImage(currentImage, 0, 0, canvas.width, canvas.width);
+  //   addNotification();
+  // }
 }
 init();
