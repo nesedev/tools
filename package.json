@@ -6,7 +6,7 @@
   "author": "Nesewebel <nesewebel@pm.me>",
   "license": "MIT",
   "scripts": {
-    "serve": "node index.js",
+    "start": "node index.js",
     "test": "nodemon index.js -i static"
   },
   "dependencies": {

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto+Slab&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Roboto Slab', sans-serif;
+  color: #DFDFDF;
+  background: #202225;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  overflow: visible;
+  max-width: 90%;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 400;
+}
+
+#logo-input {
+  display: none;
+}
+
+.button {
+  background: #36393F;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.input {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: inherit;
+  border: none;
+  background: #36393F;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: inherit;
+}
+
+.button:hover {
+  background: #2F3136;
+}
+
+#logo-canvas {
+  display: none;
+}
+
+#logo-output {
+  width: 100%;
+  border-radius: 50%;
+  transition: .25s ease-in-out;
+  /* image-rendering: pixelated;
+  image-rendering: crisp-edges; */
+}
+
+#logo-output:hover {
+  border-radius: 35%;
+}
