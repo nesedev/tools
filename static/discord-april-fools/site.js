@@ -1,5 +1,3 @@
-console.log('site ready');
-
 var logoInput = document.getElementById('logo-input');
 var logoInputButton = document.getElementById('logo-input-button');
 var numberInput = document.getElementById('number-input');
@@ -30,7 +28,8 @@ logoInput.onchange = function(e) {
 }
 
 numberInput.onchange = function() {
-  addNotification();
+  if (!(numberInput.value > 0 && numberInput.value < 10)) return;
+
   ctx.clearRect(0,0,canvas.width, canvas.height);
   ctx.drawImage(currentImage, 0, 0, canvas.width, canvas.width);
   addNotification();
@@ -59,7 +58,7 @@ function addNotification() {
 
   ctx.fillStyle = 'white';
   ctx.font = '700 125px Roboto Mono';
-  ctx.fillText(numberInput.value, 338, 420); 
+  ctx.fillText(numberInput.value, 338, 420);
 
   logoOutput.src = canvas.toDataURL();
 }
@@ -69,11 +68,5 @@ function init() {
   ctx.fillStyle = '#36393F';
   ctx.fillRect(0,0,canvas.width, canvas.height);
   addNotification();
-
-  // currentImage.src = 'images/sample.png';
-  // currentImage.onload = function() {
-  //   ctx.drawImage(currentImage, 0, 0, canvas.width, canvas.width);
-  //   addNotification();
-  // }
 }
 init();
