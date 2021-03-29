@@ -6,6 +6,10 @@
     <title>404 - Nese Tools</title>
   </head>
   <body>
-    <h1>404 not found</h1>
+    <h1>No tool was found on this url</h1>
+    <script>
+      if (window.location.hash) return;
+      window.location.replace('../#' + window.location.href.substring(window.location.href.lastIndexOf('/') + 1));
+    </script>
   </body>
 </html>
