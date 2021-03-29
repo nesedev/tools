@@ -1,0 +1,85 @@
+@import url('../../assets/main.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto+Slab&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+  background: var(--primary-bg);
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.5em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  overflow: visible;
+  max-width: 90%;
+  width: 512px;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+#logo-input {
+  display: none;
+}
+
+.button {
+  background: var(--gray-4);
+  margin: 1em 0;
+  padding: .5em;
+  border-radius: .5em;
+  cursor: pointer;
+  transition: .25s;
+  width: 100%;
+}
+
+.button h1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.input {
+  font-size: 1em;
+  font-weight: 400;
+  font-family: inherit;
+  border: none;
+  background: var(--gray-4);
+  margin-bottom: 1em;
+  padding: .5em;
+  border-radius: .5em;
+  color: inherit;
+  width: 100%;
+  outline: none;
+}
+
+.button:hover {
+  background: var(--gray-4);
+}
+
+#logo-canvas {
+  width: 256px;
+  max-width: 100%;
+  border-radius: 50%;
+  transition: .25s ease-in-out;
+}
+
+#logo-canvas:hover {
+  border-radius: 35%;
+}
