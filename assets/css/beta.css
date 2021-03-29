@@ -14,7 +14,7 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
-  background: url('/assets/images/bg_1.jpg');
+  background: url('../images/bg_1.jpg');
   background-size: cover;
   background-position: center;
 }

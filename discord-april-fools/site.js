@@ -57,7 +57,7 @@ function addNotification() {
   ctx.fill();
 
   ctx.fillStyle = 'white';
-  ctx.font = '700 125px Roboto Mono';
+  ctx.font = '700 125px "Roboto Mono"';
   ctx.fillText(numberInput.value, 338, 420);
 
   // logoOutput.src = canvas.toDataURL();
